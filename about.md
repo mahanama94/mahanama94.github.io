@@ -12,4 +12,6 @@ A place to include any other types of information that you'd like to include abo
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[bhanuka.14@cse.mrt.ac.lk](mailto:bhanuka.14@cse.mrt.ac.lk)
+
+[mahanama94@hotmail.com](mailto:mahanama94@hotmail.com)

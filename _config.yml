@@ -6,7 +6,7 @@
 name: Bhanuka Mahanama
 
 # Short bio or description (displayed in the header)
-description: Web | Mobile 
+description: Web | Mobile
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: https://avatars2.githubusercontent.com/u/14837304?v=3&u=b6f860c740f35e37af34878712f53aa18109d109&s=400
@@ -18,15 +18,15 @@ avatar: https://avatars2.githubusercontent.com/u/14837304?v=3&u=b6f860c740f35e37
 # Includes an icon in the footer for each username you enter
 footer-links:
   dribbble:
-  email:
+  email: bhanuka.14@cse.mrt.ac.lk
   facebook:
   flickr:
-  github: barryclark/jekyll-now
+  github: mahanama94
   instagram:
   linkedin:
   pinterest:
   rss: # just type anything here for a working RSS icon
-  twitter: jekyllrb
+  twitter:
   stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
   youtube: # channel/<your_long_string> or user/<user-name>
   googleplus: # anything in your profile username that comes after plus.google.com/
