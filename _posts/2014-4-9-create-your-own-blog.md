@@ -31,6 +31,7 @@ In the case of our blog, we will be using a minimal theme that I have used for m
 
 As a github user, you are entitled to host a user website with which is accessible through `username.github.io`. To use that all you have to do is to change the name of the forked repository to `username.github.io` in the "Settings" tab. Once you have completed, you will have your blog runing on `username.github.io`.
 
+You will have to delete the CNAME file unless you are working with some domain of your own.
 
 Sometimes, the update process time can take some time upto few minutes. If the blog doesn't show up, wait for sometime and refresh the page.
 Once the blog has been successfully hosted, the home page you will have similar home page ( I have already done the tweaks :D ).
