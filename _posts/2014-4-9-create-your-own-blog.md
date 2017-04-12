@@ -8,9 +8,12 @@ configuring the CMS in wordpress or somewhere else.
 
 Github offers hosting for each account in which is accessible thorugh `username.github.io`, and In the blog we will be
 
-  1. Creating Jekyll ( See in a later blog ) powered blog
+  1. Creating Jekyll ( See in a later blog post ) powered blog
   2. Host it in github
   3. Making the necessary tweaks.
+
+
+<img src="{{ site.baseurl }}/images/create-blog/power-of-markdown.jpg" alt="Vader power of markdown" title="Vader power of markdown">
 
 ### 1. Creating Jekyll powered blog
 

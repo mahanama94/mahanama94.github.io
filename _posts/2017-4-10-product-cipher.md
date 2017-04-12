@@ -11,6 +11,8 @@ We will be encrypting a simple text file with **Secret message** :D.
 Product cipher is considered as a bridge between the modern and classical cipher. Product cipher incorporates several aspects from the classical
 cipher such as the substitution and permutations. In the implementation, we will be implementing a system that will incorporate both substitution and permutation.
 
+<img src="{{ site.baseurl }}/images/product-cipher/classical-cipher-disturbing.jpg" width="50%" alt="Vader classical cipher disturbing" title="Vader classical cipher disturbing">
+
 ### Getting off
 
 Before the implementation of the application, we will have to create the interfaces and the controllers for the application which will contain
@@ -167,6 +169,8 @@ The complete reverse process of the above process has to be implemented in the c
 
 [https://github.com/mahanama94/ProductCipher](https://github.com/mahanama94/ProductCipher "Source Code")
 
+
+<img src="{{ site.baseurl }}/images/product-cipher/encrypt-all-the-things.jpg" width="50%">
 
 Cheers !!!
 
