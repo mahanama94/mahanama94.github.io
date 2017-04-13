@@ -6,7 +6,7 @@ title: Ok Cordova, First voice controlled Cordova App
 In a previous blog post, I have included how to build a voice plugin for Cordova. In the blog we will be using the plugin
 built to make Android-Cordova application to set alarms.
 
-### Getting strted
+### Getting started
 
 - First of all, you are required to have node, npm, cordova-cli android sdk installed in your Computer. (Which I will not be covering)
 
@@ -18,7 +18,7 @@ built to make Android-Cordova application to set alarms.
 
 **`cd helloApp`**
 
-(Open the folder in your favourite text editor or IDE )
+(Open the folder in your favorite text editor or IDE )
 
 ### Installing the Voice Plugin
 
@@ -62,7 +62,7 @@ built to make Android-Cordova application to set alarms.
 
 ### Testing the Application
 
-- Launch the application with the Default Launcher (Icon) and try out the button. You will be alerted that the App has been called with no Voice Commmand.
+- Launch the application with the Default Launcher (Icon) and try out the button. You will be alerted that the App has been called with no Voice Command.
 
 <img src="{{ site.baseurl }}/images/set-alarm/no-voice-action.png" width="50%" alt="No Voice Action" title="No Voice Action">
 
