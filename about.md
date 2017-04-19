@@ -29,8 +29,13 @@ permalink: /about/
   Hybrid world had no plugin to handle explicit calls for the application through
   voice commands (__" Ok Google, Find me bla bla "__).
 
-  During the most recent weeks,
-  I've been working on a plugin to handle those events. :) ( Hope it will work :D )
+  I was able to complete voice commands to a certain extent in the plugin. Including setting alarms, timers and search in app. You can find the
+  source code of the plugin at
+
+  [https://github.com/mahanama94/cordova-voice-command-plugin](https://github.com/mahanama94/cordova-voice-command-plugin "Source Code")
+
+  Feel free to use it in your awesome app, improve it and most importantly let me know your awesome work too. :)
+
 
 
 ### Contact me
