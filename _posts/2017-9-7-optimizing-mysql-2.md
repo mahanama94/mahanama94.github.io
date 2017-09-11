@@ -125,6 +125,8 @@ as hash indexes cannot be used for these kind of operations.
 
 ![Power of Indexes - Vader]({{ site.baseurl }}/images/optimizing-mysql-2/you-dont-know.jpg "Power of Indexes - Vader")
 
+Eventhough indexes are pretty helpful in retrieving data, they incur a significant cost in the case of create, update 
+and delete operations. Therefore it is important to maintain the balance by indexing as per the requirement. 
 
 ### Cache
 
@@ -143,6 +145,12 @@ Further, the query cache allowence should not be too low or too much (100M - 200
 is too low you wolud not be able to retain cache between possible cache hits (Cache expires occur frequently) and if
 too large MySQL node be forced to spend resources on managing cache than on executing SQL. 
 
+
+## Maintain the Balance 
+
+Eventhough these tweaks can fasten your database to a certain extent, it is a must to mainitain the balance as 
+each step incurs a cost which you will have to cover from the benefits you can achieve from it. Always keep in mind 
+**You are the chosen one, you should bring balance to the Force**
 
 Cheers !!!
 
