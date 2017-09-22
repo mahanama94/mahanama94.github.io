@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Create your own blog in minutes!
+tags: [Blogs, Jekyll]
 ---
 
 There are multiple ways to get started with building your own blog. Among the many, I choose github pages since I felt it would be easier than

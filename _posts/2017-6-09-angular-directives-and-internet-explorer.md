@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Angular and the Internet Explorer!
+tags: [Web, Mobile]
 ---
 
 <img src="{{ site.baseurl }}/images/angular-IE/mycode-or-IE.jpg" alt="Is it my code or IE?" title="Is it my code or IE?">

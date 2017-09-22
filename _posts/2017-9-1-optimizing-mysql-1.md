@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Optimizing Relational Databases - Attributes
+tags: [Databases, MySQL]
 ---
 
 When it comes to delivering an optimal product to your customers, optimizing the system becomes a must to ensure that

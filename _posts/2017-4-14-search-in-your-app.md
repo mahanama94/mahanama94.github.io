@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Search in your app with voice
+tags: [Mobile, Cordova, Plugins]
 ---
 
 In a previous blog we saw how to create the first voice controlled cordova application with cordova voice plugin. In this blog we will be using the same plugin to direct the user right in to a search functionality in your awesome cordova application.

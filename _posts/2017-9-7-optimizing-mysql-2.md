@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Optimizing Relational Databases - Queries
+tags: [Databases, MySQL]
 ---
 
 In a typical application, core logic handling data between the application layer and the persistance layer is
@@ -148,7 +149,7 @@ too large MySQL node be forced to spend resources on managing cache than on exec
 ### Plan Ahead 
 
 Plan your queries ahead according to the flow of your application. Unless you are using a connection pool, it can become useless to 
-retrieve multiple data during application flow. For instance you consider table X with columns A, B, C, D, and E. During the process flow you may retrieve A, B and C initially, but in a latter stage you might require D and E subjected to same conditions, In such situations it can become more efficient to retrieve all A, B, C, D and E at once and use the according to the flow of the application. 
+retrieve multiple data during application flow. For instance consider table X with columns A, B, C, D, and E. During the process flow you may retrieve A, B and C initially, but in a latter stage you might require D and E subjected to same conditions, In such situations it can become more efficient to retrieve all A, B, C, D and E at once and use the according to the flow of the application. 
 
 The saving in looking ahead can be significant if you are using a cluster as network latencies can add up to ruin the performance of the
 application. 

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Product Cipher - Bridging Classic and Modern
+tags: [Computer Security]
 ---
 
 The Product cipher implementation was one of the mini projects that I had to complete for the Computer Security.

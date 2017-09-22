@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Ok Cordova, First voice controlled Cordova App
+tags: [Mobile, Cordova, Plugins]
 ---
 
 In a previous blog post, I have included how to build a voice plugin for Cordova. In the blog we will be using the plugin

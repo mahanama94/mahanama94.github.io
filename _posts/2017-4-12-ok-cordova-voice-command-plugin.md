@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Ok Cordova, voice command plugin for Cordova
+tags: [Mobile, Cordova]
 ---
 
 It has been a while since Google (Android ) has introduced the voice interaction API for the developers.
