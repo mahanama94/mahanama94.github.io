@@ -6,9 +6,9 @@ title: Tags
 
 <h1>{{ page.title }}</h1>
 
-<div id="archives">
+<div>
 {% for tag in site.tags %}
-  <div class="archive-group">
+  <div>
     {% capture tag_name %}{{ tag | first }}{% endcapture %}
     <div id="#{{ tag_name | slugize }}"></div>
     
