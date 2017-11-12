@@ -203,6 +203,8 @@ ok
 ```
 "bhanuka" : "Hi"
 ```
+<img src="{{ site.baseurl }}/images/chat-application/i-know-erlang-now.jpeg" width="60%" alt="I Know Erlang Now!!" title="I Know Erlang Now!!">
+
 
 ## Notes
 
