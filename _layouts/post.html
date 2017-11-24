@@ -13,7 +13,6 @@ layout: default
     {% endif %}
     {% for tag in tags %}
       <a href="{{site.baseurl}}/tags/#{{tag|slugize}}" class="post-tag">{{tag}}</a>
-
     {% endfor %}
   </div>
 
@@ -24,6 +23,30 @@ layout: default
   <div class="date">
     Written on {{ page.date | date: "%B %e, %Y" }}
   </div>
+  
+  <hr>
+  <h3 align="center">Similar posts</h3>
+  <div>
+    {% for tag in tags %}
+      <div>
+          <div id="#{{ tag | slugize }}"></div>
+          
+          <a name="{{ tag | slugize }}"></a>
+          
+          <h4 class="category-head">{{ tag }}</h4>
+        <ul>
+          {% for post in site.tags[tag] %}
+          <li>
+            <article>
+              <h5><a href="{{ site.baseurl }}{{ post.url }}">{{post.title}}</a></h5>
+            </article>
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+    {% endfor %}
+    </div>
+    <hr>
 
   {% include disqus.html %}
 </article>
