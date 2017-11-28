@@ -4,7 +4,7 @@ title: Chat Application with Erlang
 tags: [Erlang]
 ---
 
-Erlang is one of the less popular and known languages among the developer community which could deliver high availability using internal constructs of the programming language and the virtual machine running on beams ( similar to bytecode in java ). Whatsapp have been one of the most popular applications that has been using Erlang for its core handling millions of messages per minute.( Facebook also have been using Erlang for a while and now they have moved away from the Erlang) Not only Whatsapp, but also thousands of telco messaging servers run on Erlang providing high avaialability and fault tolerence. 
+Erlang is one of the less popular and known languages among the developer community which could deliver high availability using internal constructs of the programming language and the virtual machine running on beams ( similar to bytecode in java ). Whatsapp have been one of the most popular applications that has been using Erlang for its core handling millions of messages per minute. (Facebook also have been using Erlang for a while and now they have moved away from the Erlang) Not only Whatsapp, but also thousands of telco messaging servers run on Erlang providing high avaialability and fault tolerence. 
 
 In this episode we will be developing a simple chat application covering the basic design concepts in Erlang. 
 

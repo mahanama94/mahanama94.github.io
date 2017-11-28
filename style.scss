@@ -28,6 +28,8 @@ body {
   max-width: 740px;
   padding: 0 10px;
   width: 100%;
+  text-align: justify;
+  text-justify: inter-word;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -312,12 +314,12 @@ table tr th :last-child, table tr td :last-child {
 
 .post-tag {
   display: inline-block;
-  background: rgba($gray, 0.15);
-  padding: 0 .5rem;
+  background: rgba($gray, 0.20);
+  padding: 0 .9rem;
   margin-right: .5rem;
   border-radius: 4px;
   color: $gray;
-  font-size: 90%;
+  font-size: 105%;
 }
 
 
