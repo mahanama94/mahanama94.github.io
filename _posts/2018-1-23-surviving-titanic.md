@@ -132,9 +132,10 @@ person on Titanic and of course, you can make a submission on [Kaggle](https://w
 
 Here we have used a simple set of data with no or less transformation and as per tests, the model has an
 accuracy of around 70%. We can improve the accuracy by considering other data that we have ignored during the process.
-For instance the cabin number (or letter) can provide a hint on the survival. (Think like people in the cabins of front part
+For instance the cabin number (or the letter) can provide a hint on the survival. (Think like people in the cabins of front part
     of the ship might have a higher change of survival compared to others)
-On the other-hand, the predictions might lose accuracy as a result of those data.
+On the other-hand, the predictions might lose accuracy as a result of those data. Plus you also can use the name of the person
+for your predictions, cause we know Jack died and Rose survived. ;)
 
 
 
