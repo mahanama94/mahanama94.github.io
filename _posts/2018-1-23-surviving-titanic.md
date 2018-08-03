@@ -137,7 +137,13 @@ For instance the cabin number (or the letter) can provide a hint on the survival
 On the other-hand, the predictions might lose accuracy as a result of those data. Plus you also can use the name of the person
 for your predictions, cause we know Jack died and Rose survived. ;)
 
+### Hire me
 
+I currently work as a freelancer for projects in mobile applications, web applications, desktop applications, data mining
+and machine learning. I provide my services mainly using Ionic framework, PHP, NodeJs, Java, electronJs, Erlang and Python.
+You can directly contact me for your projects or can visit my Fiverr profile. Please contact me before placing an order.
+
+[mahanama94 Fiverr](https://www.fiverr.com/mahanama94/)
 
 Cheers !!!
 

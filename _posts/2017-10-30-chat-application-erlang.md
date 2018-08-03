@@ -4,27 +4,27 @@ title: Chat Application with Erlang
 tags: [Erlang]
 ---
 
-Erlang is one of the less popular and known languages among the developer community which could deliver high availability using internal constructs of the programming language and the virtual machine running on beams ( similar to bytecode in java ). Whatsapp have been one of the most popular applications that has been using Erlang for its core handling millions of messages per minute. (Facebook also have been using Erlang for a while and now they have moved away from the Erlang) Not only Whatsapp, but also thousands of telco messaging servers run on Erlang providing high avaialability and fault tolerence. 
+Erlang is one of the less popular and known languages among the developer community which could deliver high availability using internal constructs of the programming language and the virtual machine running on beams ( similar to bytecode in java ). Whatsapp have been one of the most popular applications that has been using Erlang for its core handling millions of messages per minute. (Facebook also have been using Erlang for a while and now they have moved away from the Erlang) Not only Whatsapp, but also thousands of telco messaging servers run on Erlang providing high avaialability and fault tolerence.
 
-In this episode we will be developing a simple chat application covering the basic design concepts in Erlang. 
+In this episode we will be developing a simple chat application covering the basic design concepts in Erlang.
 
 ## Prerequisites
 
-You will require Erlang installed in your machine and you can test for the correct installation by running `erl` command on the termincal of your machine. 
+You will require Erlang installed in your machine and you can test for the correct installation by running `erl` command on the termincal of your machine.
 
 ## Structure
 
-Application will consist of a chat server, chat state machines ( handling state of each chat ) and a chat client for you to start chats. 
+Application will consist of a chat server, chat state machines ( handling state of each chat ) and a chat client for you to start chats.
 
 ![Application Structure]({{ site.baseurl }}/images/chat-application/application-structure.png "Application Structure")
 
-Chat server will be running as a background process waiting for incoming connections. Once a client connects the chat server, a chat state machine is spawned which will be handling all the events from the chat client. A reference to the chat state machine will be passed to the chat client upon the connecting witht the chat server, which will be used by the chat client for sending future messages. 
+Chat server will be running as a background process waiting for incoming connections. Once a client connects the chat server, a chat state machine is spawned which will be handling all the events from the chat client. A reference to the chat state machine will be passed to the chat client upon the connecting witht the chat server, which will be used by the chat client for sending future messages.
 
 ![Messaging Structure]({{ site.baseurl }}/images/chat-application/messaging-structure.png "Messaging Structure")
 
 ## Coding
 
-### Chat client 
+### Chat client
 
 Chat client is a simple gen_server module communicating with the chat server and the fsm once a state machine has been allocated for the chat client. To start the gen_server, we will be prompting the user to provide his name through function parameters. ( We will write a seperate API function that will invoke a gen_server start_link)
 
@@ -39,9 +39,9 @@ start_link(Name) ->
     gen_server:start_link({local, ?SERVER}, ?MODULE, [{name, Name}], []).
 ```
 
-gen_server start_link will spawn a gen_server with the `chat_client` module with Arguments `[{name, Name}]` and options `[]`. Which will call the `init/1` with the arguments passed. 
+gen_server start_link will spawn a gen_server with the `chat_client` module with Arguments `[{name, Name}]` and options `[]`. Which will call the `init/1` with the arguments passed.
 
-In the initialization of the chat client gen_server, we will therefore get a proplist containing the name for the chat client to register with the chat server. Once the chat client recieves a handler pid from the chat server upon successful connection, handler pid will be saved in the state of the chat client. 
+In the initialization of the chat client gen_server, we will therefore get a proplist containing the name for the chat client to register with the chat server. Once the chat client recieves a handler pid from the chat server upon successful connection, handler pid will be saved in the state of the chat client.
 
 ``` erlang
 
@@ -78,7 +78,7 @@ handle_call({send, {Name, Message}}, _From, State) ->
 
 ### Chat Server
 
-Chat server is also a `gen_server`, which has the responsibility of handling incoming connections for our super awesome chat. It will spawn a `gen_fsm` for each request and passed the `pid` of the `gen_fsm` it spawns. Further, it will broadcast the new connections to all existing handlers. 
+Chat server is also a `gen_server`, which has the responsibility of handling incoming connections for our super awesome chat. It will spawn a `gen_fsm` for each request and passed the `pid` of the `gen_fsm` it spawns. Further, it will broadcast the new connections to all existing handlers.
 
 ``` erlang
 -module(chat_server).
@@ -100,7 +100,7 @@ handle_call({register, Name}, From, State) ->
 
 ### Chat handler
 
-Chat handler is a `gen_fsm`, (newer construct is `gen_statem`) whichis responsible for a chat client. Each will contain information about which `fsm` is serving which client and routing decisions will be taken here. 
+Chat handler is a `gen_fsm`, (newer construct is `gen_statem`) whichis responsible for a chat client. Each will contain information about which `fsm` is serving which client and routing decisions will be taken here.
 
 ```erlang
 -module(chat_fsm).
@@ -122,7 +122,7 @@ init(Args) ->
 
 ```
 
-The fsm will have a single state `connected`, which will be the initial state and requires coding to handle incoming send or recieve message events. 
+The fsm will have a single state `connected`, which will be the initial state and requires coding to handle incoming send or recieve message events.
 
 ``` erlang
 connected({send, {RecieverName, Message}}, State) ->
@@ -151,12 +151,12 @@ connected(_Event,  State) ->
 
 ```
 
-And complete the Application according to your preference.For instace you may centralize the routing function, or may use some persistancy with `mnesia` or some other database, and many more. 
+And complete the Application according to your preference.For instace you may centralize the routing function, or may use some persistancy with `mnesia` or some other database, and many more.
 
-## Testing 
-#### Compile the code. 
+## Testing
+#### Compile the code.
 
-You can simply use `c/1` on the erl shell to compile you modules. Ot you can use erlc or emake if you are using a project template. 
+You can simply use `c/1` on the erl shell to compile you modules. Ot you can use erlc or emake if you are using a project template.
 
 
 #### Start the chat server
@@ -170,10 +170,10 @@ erl -sname server -setcookie  chat
 #### Start a client 1.
 ```
 erl -sname bhanuka -setcookie chat
-(bhanuka@bhanuka-Inspiron-3542)1> net_adm:ping('server@bhanuka-Inspiron-3542'). 
+(bhanuka@bhanuka-Inspiron-3542)1> net_adm:ping('server@bhanuka-Inspiron-3542').
 pong
 (bhanuka@bhanuka-Inspiron-3542)2> chat_client:start_link("bhanuka").           
-Name : "bhanuka" 
+Name : "bhanuka"
 {ok,<0.80.0>}
 ```
 
@@ -183,7 +183,7 @@ erl -sname rajith -setcookie chat
 (rajith@bhanuka-Inspiron-3542)1> net_adm:ping('server@bhanuka-Inspiron-3542').
 pong
 (rajith@bhanuka-Inspiron-3542)2> chat_client:start_link("rajith").
-Name : "rajith" 
+Name : "rajith"
 {ok,<0.52.0>}
 ```
 
@@ -192,7 +192,7 @@ Name : "rajith"
 "rajith" Joined the Server
 ```
 
-#### Say Hi to rajith 
+#### Say Hi to rajith
 ```
 (bhanuka@bhanuka-Inspiron-3542)3> chat_client:send_messge("rajith", "Hi").
 ok
@@ -209,6 +209,14 @@ ok
 ## Notes
 
 A method similar to the above is used in many telco application in the case of handling sessions from the mobile devices. For instance consider USSD, once you start a USSD session, a state machine will be spawned in the core server which is responsible for managing the sessions for your session. The same approach is used for call handling the core networks.
+
+### Hire me
+
+I currently work as a freelancer for projects in mobile applications, web applications, desktop applications, data mining
+and machine learning. I provide my services mainly using Ionic framework, PHP, NodeJs, Java, electronJs, Erlang and Python.
+You can directly contact me for your projects or can visit my Fiverr profile. Please contact me before placing an order.
+
+[mahanama94 Fiverr](https://www.fiverr.com/mahanama94/)
 
 Cheers !!!
 

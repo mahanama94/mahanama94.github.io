@@ -56,6 +56,13 @@ Search feature can come in handy if the user of the application usually searches
 
 - Since the plugin is in development stage, it is recommended to follow the guide in the documentation.
 
+### Hire me
+
+I currently work as a freelancer for projects in mobile applications, web applications, desktop applications, data mining
+and machine learning. I provide my services mainly using Ionic framework, PHP, NodeJs, Java, electronJs, Erlang and Python.
+You can directly contact me for your projects or can visit my Fiverr profile. Please contact me before placing an order.
+
+[mahanama94 Fiverr](https://www.fiverr.com/mahanama94/)
 
 Cheers!!!
 
