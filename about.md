@@ -52,6 +52,8 @@ permalink: /about/
 
   [mahanama94 Fiverr](https://www.fiverr.com/mahanama94/)
 
+ <img src="{{ site.baseurl }}/images/hire-me.jpeg" alt="Hire Me Random User" style="width: 400px;"/>
+
 
 
 ### Contact me
