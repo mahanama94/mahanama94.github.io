@@ -26,6 +26,8 @@ collaboration requirements of a university student.
   </blockquote>
 </div>
 
+[View Product Demo on Facebook](https://www.facebook.com/CodeSprint/videos/1757666967831271/){:target="_blank"}
+
 
 ### Awards
 
@@ -49,4 +51,4 @@ Wytboard was awarded with Guru Edutainment project of the year award for the abi
 </div>
 
 <br>
-[Read on Ceylon Business Reporter](https://cbr.lk/education/guru-lk-supports-kelaniya-universitys-hackx-2k16-strategic-sponsor/)
+[Read on Ceylon Business Reporter](https://cbr.lk/education/guru-lk-supports-kelaniya-universitys-hackx-2k16-strategic-sponsor/){:target="_blank"}
