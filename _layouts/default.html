@@ -12,6 +12,13 @@
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
 
+    <!-- Styling for Youtube video embedding -->
+    <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style>
+
+    <!-- Load Facebook SDK for JavaScript for FB video embedding-->
+    <div id="fb-root"></div>
+    <script async defer src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2"></script>
+
     <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
   </head>
 
@@ -28,7 +35,8 @@
 
           <nav>
             <a href="{{ site.baseurl }}/">Blog</a>
-            <a href="{{ site.baseurl }}/assets/CV.pdf">CV</a>
+            <a href="{{ site.baseurl }}/projects">Projects</a>
+            <a href="{{ site.baseurl }}/assets/resume.pdf">CV</a>
             <a href="{{ site.baseurl }}/about">About</a>
           </nav>
         </header>
