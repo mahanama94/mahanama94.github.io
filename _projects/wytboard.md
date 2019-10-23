@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: project
 title: Wytboard
 permalink: /projects/wytboard
 ---
@@ -33,7 +33,7 @@ collaboration requirements of a university student.
 
 #### CodeSprint - Runners Up
 
-<img src="{{ site.baseurl }}/images/wytboard/codesprint.jpg" alt="CodeSprint Runners Up" title="CodeSprint Runners Up">
+![CodeSprint Runners Up]({{ site.baseurl }}/images/wytboard/codesprint.jpg "CodeSprint Runners Up"){:class="img-fluid"}
 
 <br>
 

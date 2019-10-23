@@ -1,9 +1,10 @@
 ---
 layout: page
 permalink: /about/
+title: About Me
+date: October 22, 2019
 ---
 
-### About Me
 
   I joined [Old Dominion University](https://odu.edu/) as a Ph.D. student in fall 2019
   under the supervision of [Dr Sampath Jayarathna](https://www.cs.odu.edu/~sampath/).
