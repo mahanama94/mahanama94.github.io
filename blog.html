@@ -1,9 +1,11 @@
 ---
 layout: default
+permalink: /blog/
+title: Blog
 ---
 
 <div class="posts">
-  {% for post in paginator.posts %}
+  {% for post in site.posts %}
     <article class="post">
 
       <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
@@ -17,8 +19,8 @@ layout: default
   {% endfor %}
 
 </div>
-<hr>
-<div class="pagination">
+<!-- <hr> -->
+<!-- <div class="pagination">
 
   {% if paginator.previous_page %}
     <a href="{{ paginator.previous_page_path }}" class="previous">Previous</a>
@@ -30,7 +32,7 @@ layout: default
   -->
   {% if paginator.next_page %}
     <a href="{{ paginator.next_page_path }}" class="next">Next</a>
-  <!--else 
+  <!--else
     <span class="next ">Next</span> -->
   {% endif %}
-</div>
+<!-- </div> -->
